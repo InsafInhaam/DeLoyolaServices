@@ -148,3 +148,96 @@ function feature_services()
 
 add_shortcode('feature-services', 'feature_services');
 
+
+
+function contact_page()
+{
+    ?>
+    <section class="contact-page-two">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-5">
+                    <div class="contact-page-two__left">
+                        <div class="section-title text-left">
+                            <span class="section-title__tagline">Contact Now</span>
+                            <h2 class="section-title__title">Feel Free to Write us</h2>
+                        </div>
+                        <ul class="list-unstyled contact-page-two__info">
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-message"></span>
+                                </div>
+                                <div class="text">
+                                    <p><a href="mailto:brote@company.com">brote@company.com</a></p>
+                                    <h5>Send mail</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-phone-call"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Call Anytime</p>
+                                    <h5><a href="tel:2300068603">+23 (000) 68 603</a></h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-location-1"></span>
+                                </div>
+                                <div class="text">
+                                    <p>88 Kilda Broklyn Road</p>
+                                    <h5>New York, USA</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7">
+                    <div class="contact-page-two__right">
+                        <form action="assets/inc/sendemail.php" class="comment-one__form contact-form-validated"
+                            novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="comment-form__input-box">
+                                        <input type="text" placeholder="Your name" name="name">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="comment-form__input-box">
+                                        <input type="email" placeholder="Email address" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="comment-form__input-box">
+                                        <input type="text" placeholder="Phone number" name="Phone">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="comment-form__input-box">
+                                        <input type="text" placeholder="Subject" name="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="comment-form__input-box text-message-box">
+                                        <textarea name="message" placeholder="Write message"></textarea>
+                                    </div>
+                                    <div class="comment-form__btn-box">
+                                        <button type="submit" class="thm-btn comment-form__btn">Send a Message <i
+                                                class="fa fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php
+}
+
+add_shortcode('contact-block-shortcode', 'contact_page');
+
